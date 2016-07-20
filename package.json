@@ -1,0 +1,31 @@
+{
+    "author": "scottybrackett@gmail.com",
+    "dependencies": {},
+    "keywords": [],
+    "name": "time_weather",
+    "pebble": {
+        "capabilities": [
+            "location"
+        ],
+        "displayName": "TIME_WEATHER",
+        "enableMultiJS": false,
+        "messageKeys": {
+            "KEY_CONDITIONS": 1,
+            "KEY_TEMPERATURE": 0
+        },
+        "projectType": "native",
+        "resources": {
+            "media": []
+        },
+        "sdkVersion": "3",
+        "targetPlatforms": [
+            "aplite",
+            "basalt"
+        ],
+        "uuid": "66a1e271-1c08-463c-ae5a-df468c62af9b",
+        "watchapp": {
+            "watchface": true
+        }
+    },
+    "version": "1.0.0"
+}
