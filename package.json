@@ -1,28 +1,35 @@
 {
-    "author": "scottybrackett@gmail.com",
+    "author": "rachel",
     "dependencies": {},
     "keywords": [],
-    "name": "time_weather",
+    "name": "watchface-1-weather",
     "pebble": {
         "capabilities": [
             "location"
         ],
-        "displayName": "TIME_WEATHER",
+        "displayName": "watchface 1 weather",
         "enableMultiJS": false,
-        "messageKeys": {
-            "KEY_CONDITIONS": 1,
-            "KEY_TEMPERATURE": 0
-        },
+        "messageKeys": [
+            "TEMPERATURE",
+            "CONDITIONS"
+        ],
         "projectType": "native",
         "resources": {
-            "media": []
+            "media": [
+                {
+                    "file": "fonts/GeosansLight.ttf",
+                    "name": "GEOSANS_18",
+                    "targetPlatforms": null,
+                    "type": "font"
+                }
+            ]
         },
         "sdkVersion": "3",
         "targetPlatforms": [
             "aplite",
             "basalt"
         ],
-        "uuid": "66a1e271-1c08-463c-ae5a-df468c62af9b",
+        "uuid": "2e136644-f684-48d3-9306-8e37bd85314c",
         "watchapp": {
             "watchface": true
         }
