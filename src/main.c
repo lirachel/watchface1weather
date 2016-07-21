@@ -87,7 +87,7 @@ layer_add_child(window_get_root_layer(window), s_battery_layer);
 	// Create temperature Layer
 //	GRect bounds = layer_get_bounds(layer);
 	
-	s_weather_layer = text_layer_create(GRect(0, PBL_IF_ROUND_ELSE(125, 120), 144, 50));
+	s_weather_layer = text_layer_create(GRect(0, PBL_IF_ROUND_ELSE(125, 120), 144, 75));
 	
 	// Style the text
 	text_layer_set_background_color(s_weather_layer, GColorClear);
@@ -97,7 +97,7 @@ layer_add_child(window_get_root_layer(window), s_battery_layer);
 	
 	// Create second custom font, apply it and add to Window
 	s_weather_font = fonts_load_custom_font(
-                          resource_get_handle(RESOURCE_ID_GEOSANS_18));
+                          resource_get_handle(RESOURCE_ID_GEOSANS_16));
 	text_layer_set_font(s_weather_layer, s_weather_font);
 	layer_add_child(window_get_root_layer(window), text_layer_get_layer(s_weather_layer));
 
@@ -149,7 +149,7 @@ static void inbox_received_callback(DictionaryIterator *iterator, void *context)
 
 	// If all data is available, use it
 	if(temp_tuple && conditions_tuple) {
-		snprintf(temperature_buffer, sizeof(temperature_buffer), "%dC", (int)temp_tuple->value->int32);
+		snprintf(temperature_buffer, sizeof(temperature_buffer), "%d°F", (int)temp_tuple->value->int32);
 		snprintf(conditions_buffer, sizeof(conditions_buffer), "%s", conditions_tuple->value->cstring);
 	}
 	

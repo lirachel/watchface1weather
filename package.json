@@ -18,7 +18,13 @@
             "media": [
                 {
                     "file": "fonts/GeosansLight.ttf",
-                    "name": "GEOSANS_18",
+                    "name": "GEOSANS_15",
+                    "targetPlatforms": null,
+                    "type": "font"
+                },
+                {
+                    "file": "fonts/GeosansLight.ttf",
+                    "name": "GEOSANS_16",
                     "targetPlatforms": null,
                     "type": "font"
                 }
